@@ -1,0 +1,61 @@
+:host {
+    flex: 1 0 300px;
+    padding: 3px;
+    position: relative;
+    max-width: 600px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.like,
+.dislike {
+    background: url("icons.png") no-repeat -55px -8px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 25px 0 #fff;
+    opacity: .6;
+}
+
+.like_count,
+.dislike_count,
+.review_count {
+    position: absolute;
+    bottom: 30px;
+    left: 70px;
+    text-shadow: 1px 1px 1px #000;
+    opacity: .8;
+    color: #ffffff;
+    z-index: 999;
+}
+
+.like:hover,
+.dislike:hover {
+    opacity: 1;
+    box-shadow: none;
+}
+
+.dislike {
+    right: 20px;
+    left: auto;
+    transform: rotate(180deg);
+}
+
+.review_count {
+    right: 90px;
+    left: 90px;
+    text-align: center;
+}
+
+.dislike_count {
+    right: 70px;
+    left: auto;
+    z-index: 1;
+}

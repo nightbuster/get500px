@@ -1,0 +1,15 @@
+.container {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -6px;
+}
+
+.container > app-photo {
+    flex: 1 0 300px;
+    padding: 3px;
+    position: relative;
+    max-width: 600px;
+}
